@@ -22,7 +22,7 @@ class Guide(models.Model):
     destination = models.CharField(max_length=100)
     current_status = models.CharField(max_length=20)
     created_at = models.DateTimeField(default=timezone.now)
-    updated_at = models.DateTimeField(auto_now=True)    
+    updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
         db_table = "Guide"  # Define table name 'Guide'
